@@ -1,0 +1,14 @@
+[Unit]
+Description=Run Normal Cam  Python Script
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python /home/test/pysenxor-master/example/OFC_Norm_Cam.py
+Restart=always
+User=test
+WorkingDirectory=/home/test
+
+[Install]
+WantedBy=multi-user.target
+
+
